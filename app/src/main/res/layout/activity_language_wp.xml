@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".write_post.LanguageWP">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lg_toolbar"
+        android:background="@color/white"
+        app:title="LANGUAGE"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lg_toolbar">
+        <Spinner
+            android:id="@+id/lg_courses"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rectangle2" />
+
+        <Spinner
+            android:id="@+id/lg_choose_year"
+            android:layout_width="120dp"
+            android:layout_toRightOf="@+id/lg_courses"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rectangle2" />
+
+        <EditText
+            android:id="@+id/lg_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lg_choose_year"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@color/blue1"
+            android:enabled="true"
+            android:focusable="true"
+            android:gravity="top"
+            android:hint="Post Title"
+            android:inputType="textMultiLine"
+            android:isScrollContainer="true"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/lg_post_body"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_below="@id/lg_title"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_rectangle3"
+            android:enabled="true"
+            android:focusable="true"
+            android:gravity="top"
+            android:hint="Post Body"
+            android:inputType="textMultiLine"
+            android:isScrollContainer="true"
+            android:padding="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="317dp"
+            android:id="@+id/lg_post_button"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:shadowColor="@color/white"
+            android:text="Post" />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/image_icon"
+            android:id="@+id/image_1"
+            android:padding="5dp"
+            android:layout_below="@+id/lg_post_body"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/image_icon"
+            android:id="@+id/image_2"
+            android:padding="5dp"
+            android:layout_below="@+id/lg_post_body"
+            android:layout_toRightOf="@+id/image_1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/image_icon"
+            android:id="@+id/image_3"
+            android:padding="5dp"
+            android:layout_below="@+id/lg_post_body"
+            android:layout_toRightOf="@+id/image_2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/image_icon"
+            android:id="@+id/image_4"
+            android:layout_toRightOf="@id/image_3"
+            android:padding="5dp"
+            android:layout_below="@+id/lg_post_body"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/image_icon"
+            android:id="@+id/image_5"
+            android:padding="5dp"
+            android:layout_below="@+id/lg_post_body"
+            android:layout_toRightOf="@id/image_4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/green1"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_below="@+id/image_1"
+            android:id="@+id/lg_progress_bar"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

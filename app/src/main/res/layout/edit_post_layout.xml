@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+
+        <EditText
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:scrollbars="vertical"
+            android:inputType="textMultiLine"
+            android:background="@drawable/rounded_rectangle4"
+            android:id="@+id/edit_title"/>
+        <EditText
+            android:layout_width="380dp"
+            android:layout_height="270dp"
+            android:background="@drawable/rounded_rectangle2"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:layout_below="@+id/edit_title"
+            android:scrollbars="vertical"
+            android:id="@+id/edit_body"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:background="@color/skyBlue"
+            android:layout_below="@+id/edit_body"
+            android:layout_marginLeft="250dp"
+            android:id="@+id/update_button"/>
+
+
+</RelativeLayout>

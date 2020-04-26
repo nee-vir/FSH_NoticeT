@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.fsh_noticet.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_postCategory"
+            app:destination="@id/postCategory" />
+        <action
+            android:id="@+id/action_homeFragment_to_categorySelectionActivity"
+            app:destination="@id/categorySelectionActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_commonNotice"
+            app:destination="@id/commonNotice" />
+    </fragment>
+    <fragment
+        android:id="@+id/myPostsFragment"
+        android:name="com.example.fsh_noticet.MyPostsFragment"
+        android:label="fragment_my_posts"
+        tools:layout="@layout/fragment_my_posts" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.fsh_noticet.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <activity
+        android:id="@+id/postCategory"
+        android:name="com.example.fsh_noticet.PostCategory"
+        android:label="activity_post_category"
+        tools:layout="@layout/activity_post_category" />
+    <activity
+        android:id="@+id/commonNotice"
+        android:name="com.example.fsh_noticet.notice_boards.CommonNotice"
+        android:label="activity_common_notice"
+        tools:layout="@layout/activity_common_notice" />
+    <activity
+        android:id="@+id/categorySelectionActivity"
+        android:name="com.example.fsh_noticet.CategorySelectionActivity"
+        android:label="activity_category_selection"
+        tools:layout="@layout/activity_category_selection" />
+</navigation>

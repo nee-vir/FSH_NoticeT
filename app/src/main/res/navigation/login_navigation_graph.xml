@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_navigation_graph"
+    app:startDestination="@id/PINFragment">
+
+    <fragment
+        android:id="@+id/PINFragment"
+        android:name="com.example.fsh_noticet.PINFragment"
+        android:label="fragment_pin"
+        tools:layout="@layout/fragment_pin" >
+        <action
+            android:id="@+id/action_PINFragment_to_TLoginFragment"
+            app:destination="@id/TLoginFragment"
+            app:popUpTo="@+id/PINFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/TLoginFragment"
+        android:name="com.example.fsh_noticet.TLoginFragment"
+        android:label="fragment_tlogin"
+        tools:layout="@layout/fragment_tlogin" >
+        <action
+            android:id="@+id/action_TLoginFragment_to_homeActivity"
+            app:destination="@id/homeActivity" />
+        <action
+            android:id="@+id/action_TLoginFragment_to_TRegFragment"
+            app:destination="@id/TRegFragment"
+            app:popUpTo="@+id/TLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/TRegFragment"
+        android:name="com.example.fsh_noticet.TRegFragment"
+        android:label="fragment_treg"
+        tools:layout="@layout/fragment_treg" >
+        <action
+            android:id="@+id/action_TRegFragment_to_homeActivity"
+            app:destination="@id/homeActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.example.fsh_noticet.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
+</navigation>

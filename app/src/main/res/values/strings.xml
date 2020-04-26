@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">FSH_NoticeT</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="choose_year_list">
+        <item>I Year</item>
+        <item>II Year</item>
+        <item>III Year</item>
+    </string-array>
+    <string-array name="CA_Courses">
+        <item>Select Course</item>
+        <item>BCA</item>
+        <item>MCA</item>
+    </string-array>
+    <string-array name="CS_Courses">
+        <item>Select Course</item>
+        <item>CS</item>
+    </string-array>
+    <string-array name="Lang_Courses">
+        <item>Select Course</item>
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Tamil</item>
+        <item>French</item>
+    </string-array>
+    <string-array name="Math_Courses">
+        <item>Select Course</item>
+        <item>Statistics</item>
+        <item>Maths</item>
+    </string-array>
+    <string-array name="Bio_Courses">
+        <item>Select Course</item>
+        <item>BioTech</item>
+    </string-array>
+    <string-array name="Viscom_Courses">
+        <item>Select Course</item>
+        <item>Viscom</item>
+    </string-array>
+</resources>

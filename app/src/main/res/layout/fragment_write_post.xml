@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WritePostFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/kindblue">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Title"
+        android:background="@color/white"
+        android:layout_margin="5dp"
+        android:inputType="text"
+        android:id="@+id/title_post"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Department"
+        android:layout_below="@+id/title_post"
+        android:background="@color/white"
+        android:layout_margin="5dp"
+        android:inputType="text"
+        android:id="@+id/post_dept_post"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="Body"
+        android:background="@color/white"
+        android:layout_margin="5dp"
+        android:inputType="textMultiLine"
+        android:id="@+id/post_body"
+        android:layout_below="@+id/post_dept_post"/>
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/addImage"
+        android:layout_below="@+id/post_body"
+        android:background="@drawable/ic_add_circle_outline_black_24dp"
+        android:layout_marginLeft="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        android:text="Post"
+        android:textColor="@color/white"
+        android:layout_below="@+id/upload_progress_bar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/post_button"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/addImage"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/image_view1" />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_below="@+id/image_view1"
+        android:background="@color/white"
+        android:layout_margin="5dp"
+        android:id="@+id/upload_progress_bar"/>
+</RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

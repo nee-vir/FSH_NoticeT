@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/category_background"
+    tools:context=".PostCategory">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:text="FOR EVERYONE"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:background="@drawable/forall_bg"
+            android:id="@+id/category_0"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/category_0"
+            android:background="@drawable/category_button_1"
+            android:text="COMPUTER APPLICATIONS"
+            android:textColor="@color/red1"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/category_1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_button_2"
+            android:text="VISUAL COMMUNICATION"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/category_2"
+            android:layout_below="@+id/category_1"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_button_3"
+            android:text="MATHS"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/category_3"
+            android:layout_below="@+id/category_2"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_button_4"
+            android:text="BIO TECH"
+            android:id="@+id/category_4"
+            android:layout_below="@+id/category_3"
+            android:textColor="@color/red1"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/category_4"
+            android:id="@+id/category_5"
+            android:background="@drawable/category_button_5"
+            android:text="LANGUAGE"
+            android:textColor="@color/purple"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/category_5"
+            android:id="@+id/category_6"
+            android:background="@drawable/category_button_5"
+            android:text="COMPUTER SCIENCE"
+            android:textColor="@color/lightpink"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

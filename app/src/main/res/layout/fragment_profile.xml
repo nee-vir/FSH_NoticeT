@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/circular_image"/>
+
+        <TextView
+            android:id="@+id/user_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/circular_image"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textSize="40dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_below="@+id/user_name_text"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_rectangle"
+            android:id="@+id/p_department"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_below="@+id/p_department"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_rectangle"
+            android:id="@+id/p_email"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_below="@+id/p_email"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_rectangle"
+            android:id="@+id/p_phone"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="350dp"
+            android:text="X"
+            android:background="@color/red1"
+            android:id="@+id/p_logout"/>
+    </RelativeLayout>
+
+</FrameLayout>

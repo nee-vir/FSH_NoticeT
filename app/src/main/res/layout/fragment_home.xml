@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg7">
+        <Button
+            android:id="@+id/n_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEW NOTICE"
+            android:layout_above="@+id/v_notice"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/m_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:id="@+id/v_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/m_button"
+            android:layout_centerInParent="true"
+            android:text="VIEW NOTICE"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        <Button
+            android:id="@+id/c_notice"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/v_notice"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/m_button"
+            android:text="COMMON NOTICE"
+            android:layout_centerHorizontal="true"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        <TextView
+            android:id="@+id/menu_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:text="MENU"
+            android:textSize="36sp" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
